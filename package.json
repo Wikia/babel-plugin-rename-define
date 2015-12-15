@@ -4,7 +4,7 @@
   "description": "Rename define()",
   "repository": "thejameskyle/babel-plugin-rename-define",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "index.js",
   "devDependencies": {
     "babel-core": "^6.1.18",
     "babel-preset-es2015": "^6.1.18"
