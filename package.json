@@ -2,7 +2,7 @@
   "name": "babel-plugin-rename-define",
   "version": "2.0.0",
   "description": "Rename define()",
-  "repository": "thejameskyle/babel-plugin-rename-define",
+  "repository": "Wikia/babel-plugin-rename-define",
   "license": "MIT",
   "main": "index.js",
   "devDependencies": {

@@ -1,6 +1,6 @@
 # babel-plugin-rename-define
 
-Rename define()
+Rename define(), works with Babel 6
 
 ## Installation
 
@@ -10,28 +10,13 @@ $ npm install babel-plugin-rename-define
 
 ## Usage
 
-<!--
-### Via `.babelrc` (Recommended)
-
-**.babelrc**
-
-```json
-{
-  "plugins": ["define-to-ember-define"]
-}
-```
-
-### Via CLI
-
-```sh
-$ babel --plugins define-to-ember-define script.js
-```
--->
-
-### Via Node API
+### gulp-babel
 
 ```javascript
-require("babel-core").transform("code", {
-  plugins: [{ transformer: require("babel-plugin-rename-define")("new-define-name"), position: "after" }]
-});
+babel({
+	presets: ['es2015'],
+	plugins: ['transform-es2015-modules-amd', ['rename-define', {
+		name: 'mdefine'
+	}]]
+})
 ```
